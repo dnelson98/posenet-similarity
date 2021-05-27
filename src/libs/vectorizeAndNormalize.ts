@@ -30,7 +30,7 @@ export function vectorizeAndNormalize(pose: Pose, options: Options): number[][] 
  */
 export function convertPoseToVectors(pose: Pose, weightOption?: WeightOption): number[][] {
   let vectorPoseXY: number[] = [];
-
+  console.log("convertPoseToVectors called");
   let translateX = Number.POSITIVE_INFINITY;
   let translateY = Number.POSITIVE_INFINITY;
   let scaler = Number.NEGATIVE_INFINITY;
