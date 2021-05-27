@@ -50,8 +50,8 @@ export function convertPoseToVectors(pose: Pose, weightOption?: WeightOption): n
   }
 
   pose.keypoints.forEach((point, index) => {
-    const x: number = point.position.x;
-    const y: number = point.position.y;
+    const x: number = point.x;
+    const y: number = point.y;
 
     vectorPoseXY.push(x, y);
 
